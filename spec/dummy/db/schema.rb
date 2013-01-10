@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 1) do
+ActiveRecord::Schema.define(:version => 20110615063437) do
 
   create_table "casserver_lt", :force => true do |t|
     t.string   "ticket",          :null => false
