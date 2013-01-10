@@ -1,6 +1,6 @@
 #!/usr/bin/env rake
 
-# load rspec prior to the dummy app and engine so we can set up the environment correctly using spec_helper
+# load rspec so we can set up the environment correctly using spec_helper
 require 'rspec/core/rake_task'
 require_relative './spec/spec_helper.rb'
 RSpec::Core::RakeTask.new(:spec)
