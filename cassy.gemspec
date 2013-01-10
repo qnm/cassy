@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version = "2.0.2"
 
   s.add_dependency 'crypt-isaac'
-  s.add_dependency 'rails', '>= 3.0.7'
+  s.add_dependency 'rails', '>= 3.0.9'
 
-  s.add_development_dependency 'rspec-rails', '>= 2.6.0'
+  s.add_development_dependency 'rspec-rails', '>= 2.6.0', '<= 2.10.1'
   s.add_development_dependency 'capybara', '~> 1.0'
   s.add_development_dependency 'database_cleaner'
   s.add_development_dependency 'sqlite3'
