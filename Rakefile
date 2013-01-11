@@ -1,4 +1,9 @@
 #!/usr/bin/env rake
+begin
+  require 'bundler/setup'
+rescue LoadError
+  puts 'You must `gem install bundler` and `bundle install` to run rake tasks'
+end
 
 # load rspec so we can set up the environment correctly using spec_helper
 require 'rspec/core/rake_task'
@@ -14,12 +19,6 @@ begin
 rescue LoadError
   # for Rails 3.0.x we need to load the Rakefile directly, as the engine rake task doesn't exist
   load APP_RAKEFILE
-end
-
-begin
-  require 'bundler/setup'
-rescue LoadError
-  puts 'You must `gem install bundler` and `bundle install` to run rake tasks'
 end
 
 task(:default).clear
